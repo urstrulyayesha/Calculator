@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(65, 112, 73);
+        }
+        #ayesha{
+            height: 450px;
+            border:2px solid black;
+            width:40%;
+            margin-left:450px;
+            margin-top:150px;
+            border-radius:15px;
+            background-color: black;
+        }
+        #ans
+        {
+            width:100%;
+            height:40%;
+            background-color:black;
+            border-radius:15px;
+        }
+        #input{
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-rows:repeat(4,1fr);
+            gap:20px;
+            margin:10px;
+            background-color: black;
+            border-radius: 20px;
+            padding:5px;
+        }
+        #input>div{
+            background-color: rgb(87, 83, 81);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+            border-radius:25px;
+            font-size:40px;
+            color:white;
+        }
+        #input>.g{
+            background-color: rgb(160, 162, 162);
+        }
+        #input>.o{
+            background-color: orange;
+        }
+        #input>div:hover{
+            cursor:pointer;
+            background-color: rgb(40, 76, 149);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="ayesha">
+        <div id="ans"></div>
+        <div id="input">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="g">AC</div>
+            <div class="o">/</div>
+            
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="g">+/-</div>
+            <div class="o">*</div>
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="g">%</div>
+            <div class="o">-</div>
+
+            <div>result</div>
+            <div>0</div>
+            <div>.</div>
+            <div class="o">=</div>
+            <div class="o">+</div>
+        </div>
+    </div>
+
+</body></html>
